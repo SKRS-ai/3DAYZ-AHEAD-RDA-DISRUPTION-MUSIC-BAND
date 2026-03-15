@@ -71,3 +71,72 @@
 .tech-spec span {
     color: #ff0000;
 }
+/* Session Page Specifics */
+.sessions-page {
+    background-color: #080808;
+    color: #fff;
+}
+
+.sessions-container {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.sessions-header {
+    margin-bottom: 50px;
+    border-bottom: 1px solid #ff0000;
+    padding-bottom: 20px;
+}
+
+.grid-matrix {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+}
+
+.session-card {
+    background: #000;
+    border: 1px solid #333;
+    padding: 10px;
+    transition: transform 0.3s;
+}
+
+.session-card:hover {
+    border-color: #ff0000;
+    transform: scale(1.02);
+}
+
+.video-window {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    background: #111;
+}
+
+.video-window iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    filter: contrast(1.2) saturate(0.8);
+}
+
+.session-info {
+    padding: 15px 5px;
+}
+
+.file-id {
+    color: #ff0000;
+    font-family: 'Courier New', monospace;
+    font-size: 0.8rem;
+    display: block;
+}
+
+.session-info h3 {
+    margin: 5px 0 0;
+    font-size: 1rem;
+    letter-spacing: 2px;
+}
