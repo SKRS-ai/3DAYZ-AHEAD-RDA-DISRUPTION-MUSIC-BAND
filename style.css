@@ -137,6 +137,148 @@
 
 .session-info h3 {
     margin: 5px 0 0;
+    @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Syncopate:wght@700&display=swap');
+
+/* RESET & BASE */
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #050505; /* Deep matte black */
+    color: #e0e0e0;
+    font-family: 'Syncopate', sans-serif;
+    overflow: hidden;
+}
+
+/* THE VIDEO GRIT */
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    filter: contrast(180%) grayscale(100%) brightness(30%) sepia(50%) hue-rotate(-50deg);
+}
+
+.video-background iframe {
+    width: 100vw;
+    height: 100vh;
+    transform: scale(1.8);
+}
+
+/* CRT SCANLINE EFFECT */
+.scanlines {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        rgba(18, 16, 16, 0) 50%, 
+        rgba(0, 0, 0, 0.1) 50%
+    ), linear-gradient(
+        90deg, 
+        rgba(255, 0, 0, 0.03), 
+        rgba(0, 255, 0, 0.01), 
+        rgba(0, 0, 255, 0.03)
+    );
+    background-size: 100% 3px, 3px 100%;
+    z-index: -1;
+    pointer-events: none;
+}
+
+/* UI OVERLAY */
+.overlay {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    background: radial-gradient(circle, transparent 20%, rgba(0,0,0,0.8) 100%);
+}
+
+/* TITLES */
+.distorted-title {
+    font-family: 'Permanent Marker', cursive;
+    font-size: clamp(3rem, 10vw, 7rem);
+    color: #ff0000;
+    margin: 0;
+    text-transform: uppercase;
+    line-height: 0.9;
+    text-shadow: 4px 4px 0px #330000;
+}
+
+.warning-bar {
+    background: #ff0000;
+    color: #000;
+    font-weight: 900;
+    padding: 5px 20px;
+    margin-top: 10px;
+    letter-spacing: 5px;
+    font-size: 0.7rem;
+    display: inline-block;
+    transform: skewX(-15deg);
+}
+
+/* NAV BUTTONS - INDUSTRIAL STYLE */
+.action-portal {
+    width: 100%;
+    max-width: 500px;
+}
+
+.btn-main {
+    display: block;
+    text-decoration: none;
+    background: transparent;
+    color: #ff0000;
+    border: 4px solid #ff0000;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 900;
+    margin-bottom: 20px;
+    transition: 0.2s;
+    letter-spacing: 3px;
+}
+
+.btn-main:hover {
+    background: #ff0000;
+    color: #000;
+    box-shadow: 0 0 20px #ff0000;
+}
+
+.grid-nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.btn-sub {
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #444;
+    padding: 15px;
+    text-align: center;
+    font-size: 0.7rem;
+    background: rgba(255, 255, 255, 0.05);
+    transition: 0.3s;
+}
+
+.btn-sub:hover {
+    border-color: #ff0000;
+    color: #ff0000;
+}
+
+/* FOOTER */
+.system-footer {
+    font-size: 0.6rem;
+    color: #444;
+    letter-spacing: 4px;
+    text-align: center;
+}
     font-size: 1rem;
     letter-spacing: 2px;
 }
