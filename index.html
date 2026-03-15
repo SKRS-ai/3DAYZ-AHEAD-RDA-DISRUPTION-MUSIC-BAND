@@ -6,48 +6,41 @@
     <title>3DAYZ AHEAD | RDA DISRUPTION</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="disruption-engine">
+<body class="rock-disruption">
+
+    <div class="scanlines"></div>
 
     <div class="video-background">
         <iframe 
-            src="https://www.youtube.com/embed/VIDEO_ID?autoplay=1&loop=1&playlist=VIDEO_ID&controls=0&mute=0&modestbranding=1&rel=0&showinfo=0" 
+            src="https://www.youtube.com/embed/VIDEO_ID?autoplay=1&loop=1&playlist=VIDEO_ID&controls=0&mute=0&modestbranding=1&rel=0" 
             frameborder="0" 
-            allow="autoplay; encrypted-media" 
-            allowfullscreen>
+            allow="autoplay; encrypted-media">
         </iframe>
     </div>
 
     <div class="overlay">
-        <div class="glitch-wrapper">
+        <div class="hero-section">
             <h1 class="distorted-title" data-text="3DAYZ AHEAD">3DAYZ AHEAD</h1>
-            <p class="sub-brand">RDA DISRUPTION // SYSTEM_LIVE</p>
+            <div class="warning-bar">
+                <span>RDA DISRUPTION PROTOCOL ACTIVE</span>
+            </div>
         </div>
 
-        <nav class="main-navigation">
-            <a href="epk.html" class="btn-strobe">ENTER MANIFESTO [EPK]</a>
+        <nav class="action-portal">
+            <a href="epk.html" class="btn-main">ACCESS MANIFESTO</a>
             
-            <div class="button-grid">
-                <a href="#" target="_blank" class="btn-grunge">SPOTIFY</a>
-                <a href="#" target="_blank" class="btn-grunge">APPLE MUSIC</a>
-                <a href="store.html" class="btn-grunge">SUPPLY_DEPOT</a>
-                <a href="sessions.html" class="btn-grunge">SESSIONS</a>
+            <div class="grid-nav">
+                <a href="sessions.html" class="btn-sub">SESSIONS</a>
+                <a href="store.html" class="btn-sub">SUPPLY</a>
+                <a href="#" class="btn-sub">SPOTIFY</a>
+                <a href="#" class="btn-sub">APPLE</a>
             </div>
         </nav>
 
         <footer class="system-footer">
-            <span class="m3-tag">M3-HACKATHON-2021 // SKR-AI</span>
-            <span class="status-dot"></span> 
-            <span class="signal-text">SIGNAL_STRENGTH: 100%</span>
+            <p>M3-HACKATHON-2021 // SKR-AI // DISRUPT THE SYSTEM</p>
         </footer>
     </div>
-
-    <script>
-        // Most browsers block autoplay with sound until a click occurs.
-        // This ensures the experience begins as soon as the user interacts.
-        document.body.addEventListener('click', () => {
-            console.log("System Initialized...");
-        }, { once: true });
-    </script>
 
 </body>
 </html>
